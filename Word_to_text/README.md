@@ -1,0 +1,1 @@
+How to convert word doc/docx to text file.
