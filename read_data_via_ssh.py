@@ -17,7 +17,7 @@ ssh_f = subprocess.Popen( ['ssh', username+'@'+hostname, 'cat', data_fpath],
 
 data_lst = []
 for line in ssh_f.stdout:
-    print line
+    print(line)
     data_lst.append(line)
 
 
@@ -33,5 +33,5 @@ p = getpass.getpass()
 ssh.connect(hostname, username=username, password=p)
 
 stdin, stdout, stderr = ssh.exec_command('cat '+data_fpath)
-print stdout.readlines()
+print(stdout.readlines())
 ssh.close()
