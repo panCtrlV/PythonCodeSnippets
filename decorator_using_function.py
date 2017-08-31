@@ -10,6 +10,8 @@ def entry_exit(f):
         print('Entering', f.__name__)
         f()
         print('Exited', f.__name__)
+    # If you don't want to change the name of the decorated function, uncomment the following line
+    # new_f.__name__ = f.__name__
     return new_f
 
 
